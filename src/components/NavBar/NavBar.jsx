@@ -9,7 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import { Link } from 'react-router-dom';
 import { ImgClose } from './NavBar.styled';
 
-import wind from '../../assets/logo3.png';
+import wind from '../../assets/logo5.jpg';
 import wind1 from '../../assets/logo4.png';
 
 import Header from './NavDetail/Header';
@@ -56,52 +56,57 @@ export default function NavBar() {
           }}
         >
           <Link
-            to="/"
+          to="/"
+          style={{
+            display: 'flex',
+            alignItems: 'center',      // вертикальное выравнивание лого и текста
+            gap: '10px',               // отступ между лого и текстом
+            textDecorationLine: 'none',
+          }}
+        >
+          {/* Отдельный блок для фонового изображения */}
+          <div
             style={{
-              display: 'flex',
               width: '50px',
               height: '47px',
               backgroundImage: `url(${wind})`,
               backgroundRepeat: 'no-repeat',
-
-              padding: '4px',
               backgroundPosition: 'center',
               backgroundSize: 'contain',
-              textDecorationLine: 'none',
+              flexShrink: 0,           // чтобы лого не сжималось
+            }}
+          />
+
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
             }}
           >
-            <div
+            <Title
+              variant="h1"
               style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
+                margin: '0',
+                fontSize: '40px',
+                color: '#060606',
+                fontWeight: '300',
               }}
             >
-              <Title
-                variant="h1"
-                style={{
-                  margin: '0',
-                  fontSize: '40px',
-                  color: '#060606',
-                  fontWeight: '300',
-                  marginLeft: '50px',
-                }}
-              >
-                Екополіс
-              </Title>
-              <Title
-                variant="h2"
-                style={{
-                  margin: '0',
-                  fontSize: '10px',
-                  color: '#060606',
-                  fontWeight: '300',
-                  marginLeft: '50px',
-                }}
-              >
-                КОМУНАЛЬНЕ ПІДПРИЄМСТВО
-              </Title>
-            </div>
+              Екополіс
+            </Title>
+            <Title
+              variant="h2"
+              style={{
+                margin: '0',
+                fontSize: '10px',
+                color: '#060606',
+                fontWeight: '300',
+              }}
+            >
+              КОМУНАЛЬНЕ ПІДПРИЄМСТВО
+            </Title>
+          </div>
           </Link>
           <DisBox>
             <div style={{marginRight:'10px'}}>

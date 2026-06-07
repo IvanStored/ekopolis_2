@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 // import { CardActionArea } from '@mui/material';
-import Photo from '../../assets/logo.png';
+import Photo from '../../assets/logo5.jpg';
 
 export default function CardStructure(props) {
   return (
@@ -30,8 +30,8 @@ export default function CardStructure(props) {
           width: '200px',
           height: '190px',
           borderRadius: '50%',
-        
-        
+
+
         }}
       />
       <CardContent style={{  padding:'0'}}>

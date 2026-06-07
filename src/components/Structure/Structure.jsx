@@ -19,8 +19,7 @@ function createData(position, name, name2) {
 }
 
 const rows = [
-  createData('Директор ','Мелашич Сергій','Олександрович'),
-  createData('Головний бухгалтер ','Боровська Інна','Олександрівна'),
+  createData('Директор ','Мелашич Сергій','Олександрович')
 ];
 
 export default function CustomizedTables() {

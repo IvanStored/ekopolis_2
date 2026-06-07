@@ -99,7 +99,7 @@ export default function Activity() {
             }}
           >
             <PinDropTwoToneIcon style={{ marginRight: '10px' }} />
-            Украина, місто Херсон, ПРОСПЕКТ УШАКОВА, будинок 37, 73000
+            Україна, 73000, м. Херсон, просп. Незалежності (Ушакова), буд. 37
           </Typography>
 
           <Link
@@ -165,7 +165,23 @@ export default function Activity() {
           >
 
             <LocalPhoneTwoToneIcon style={{ marginRight: '10px' }} />
-          +380689451256 :  Бухгалтерія123
+          +380689451256 :  Бухгалтерія
+          </Link>
+          <Link
+            href="tel:+380957863966"
+            style={{
+              textDecoration: 'none',
+              fontSize: '18px',
+              color: '#030303',
+
+              padding: '10px',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+
+            <LocalPhoneTwoToneIcon style={{ marginRight: '10px' }} />
+          +380957863966 :  Техпідтримка сайту
           </Link>
           <Link
               href="https://wa.me/380988320518"
